@@ -1,0 +1,9 @@
+{
+  "name": "cuisine-website",
+  "description": "A french website about day-to-day cuisine.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tvuillemin/cuisine-website.git"
+  },
+  "license": "ISC"
+}
