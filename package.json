@@ -5,5 +5,8 @@
     "type": "git",
     "url": "git+https://github.com/tvuillemin/cuisine-website.git"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "htmlhint": "^0.11.0"
+  }
 }
