@@ -7,6 +7,7 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "htmlhint": "^0.11.0"
+    "htmlhint": "^0.11.0",
+    "live-server": "^1.2.1"
   }
 }
