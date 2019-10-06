@@ -34,7 +34,7 @@ footer:=src/footer.html
 
 # Initialize the distribution directory
 dist: src/assets src/images
-	mkdir dist
+	mkdir -p dist
 	cp -r src/assets dist
 	cp -r src/images dist
 
