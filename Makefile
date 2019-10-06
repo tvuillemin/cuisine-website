@@ -31,6 +31,7 @@ clean:
 
 header:=src/header.html
 footer:=src/footer.html
+sidebar:=src/sidebar.html
 
 # Initialize the distribution directory
 dist: src/assets src/images
@@ -39,5 +40,5 @@ dist: src/assets src/images
 	cp -r src/images dist
 
 # Build the home page
-dist/index.html: dist $(header) $(footer) src/index.html
-	cat $(header) src/index.html $(footer) > dist/index.html
+dist/index.html: dist $(header) $(sidebar) $(footer) src/index.html
+	cat $(header) src/index.html $(sidebar) $(footer) > dist/index.html
