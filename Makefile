@@ -11,7 +11,7 @@ init:
 	npm install
 
 # Build the final distribution directory
-build: dist/index.html
+build: dist/index.html dist/les-bases.html
 
 # Start a local server with auto-reloading
 start: build
@@ -42,3 +42,6 @@ dist: src/assets src/images
 # Build the home page
 dist/index.html: dist $(header) $(sidebar) $(footer) src/index.html
 	cat $(header) src/index.html $(sidebar) $(footer) > dist/index.html
+
+dist/les-bases.html: dist $(header) $(sidebar) $(footer) src/les-bases.html
+	cat $(header) src/les-bases.html $(sidebar) $(footer) > dist/les-bases.html
