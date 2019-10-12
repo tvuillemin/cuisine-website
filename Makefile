@@ -2,7 +2,7 @@
 # Basic commands
 ########################################################################################
 
-.PHONY: init build start lint clean
+.PHONY: init start lint clean
 .DEFAULT_GOAL:=build
 node_bin:=./node_modules/.bin
 
@@ -11,7 +11,7 @@ init:
 	npm install
 
 # Build the final distribution directory
-build: dist/index.html dist/les-bases.html
+build: dist/index.html dist/les-bases.html dist/les-produits.html
 
 # Start a local server with auto-reloading
 start: build
@@ -45,3 +45,6 @@ dist/index.html: dist $(header) $(sidebar) $(footer) src/index.html
 
 dist/les-bases.html: dist $(header) $(sidebar) $(footer) src/les-bases.html
 	cat $(header) src/les-bases.html $(sidebar) $(footer) > dist/les-bases.html
+
+dist/les-produits.html: dist $(header) $(sidebar) $(footer) src/les-produits.html
+	cat $(header) src/les-produits.html $(sidebar) $(footer) > dist/les-produits.html
