@@ -37,8 +37,8 @@ sidebar := src/sidebar.html
 # Define the distribution pages
 dist_pages := dist/index.html \
 			  dist/les-bases.html \
-			  dist/les-produits.html
-			#   dist/le-materiel.html
+			  dist/les-produits.html \
+			  dist/le-materiel.html
 
 # Build the distribution folder
 dist: dist/assets dist/images $(dist_pages)
